@@ -107,11 +107,14 @@ main{
 .name-and-id{
   width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: bold;
+}
+
+#pokemon-name{
+  margin-right: 5px;
 }
 
 .mensurations{
@@ -137,16 +140,26 @@ main{
 /* TYPES */
 
 #types{
-  width: 80px;
-  height: 30px;
+  width: 100%;
+  display: flex;
   position: absolute;
   bottom: 10px;
   left: 10px;
   display: flex;
+}
+
+.types{
+  width: 80px;
+  height: 30px;
   justify-content: center;
   align-items: center;
   border-radius: 5px;
   font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+  font-weight: bold;
 }
 
 .fire{
@@ -228,11 +241,12 @@ table{
 
 #base, #stats{
   text-align: center;
+  color: black;
 }
 
 td:first-child{
   width: 250px;
-  height: 30px;
+  height: 40px;
   text-align: center;
   background-color: var(--secondary-color);
   color: white;
@@ -247,4 +261,8 @@ td:last-child{
 }
 
 
-
+@media screen and (max-width: 768px) {
+  .pokedex{
+    width: 350px;
+  }
+}
